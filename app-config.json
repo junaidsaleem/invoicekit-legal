@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "ios": {
-    "minimumVersion": "1.0.1",
-    "latestVersion": "1.0.5",
+    "minimumVersion": "1.0.0",
+    "latestVersion": "1.0.1",
     "storeUrl": "https://apps.apple.com/app/idYOUR_APP_STORE_ID"
   },
   "android": {
