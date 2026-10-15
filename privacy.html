@@ -3,47 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Privacy Policy — InvoiceKit</title>
-    <meta name="description" content="Privacy Policy for InvoiceKit." />
+    <title>Privacy Policy — BillBook</title>
+    <meta name="description" content="Privacy Policy for BillBook." />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="page">
       <header class="site-header">
         <a class="brand" href="index.html">
-          <span class="brand-mark">IK</span>
-          InvoiceKit
+          <span class="brand-mark">BB</span>
+          BillBook
         </a>
       </header>
 
       <a class="back-link" href="index.html">← Back</a>
       <h1>Privacy Policy</h1>
       <p class="meta">
-        Last updated: August 13, 2026 · Applies to InvoiceKit v1.0.0
+        Last updated: October 15, 2026 · Applies to BillBook v1.0.0
       </p>
 
       <div class="doc">
         <p>
-          InvoiceKit was built to be a local-first app on purpose: your business
-          data is yours, and it stays on your device. This policy explains,
-          plainly and specifically, what the App stores, what it doesn't, and
-          why it asks for the device permissions it does.
+          BillBook ("the App") is an invoicing and quotation app for small
+          businesses, published by Junaid Saleem ("we", "us"). It is built to be
+          local-first on purpose: your business data is yours, and it stays on
+          your device. This policy explains, plainly and specifically, what the
+          App stores, what it sends and to whom, and why it asks for the device
+          permissions it does.
         </p>
 
         <h2>1. The short version</h2>
         <p>
-          InvoiceKit has no account system and no backend server. There is
-          nothing for us to collect, because nothing you enter ever leaves your
-          device unless you personally choose to share a generated PDF through
-          your device's own share sheet. We do not run analytics, crash
-          reporting, or advertising SDKs of any kind in the App.
+          BillBook has no account system and no server of ours. We never
+          receive your business data. Nothing you enter leaves your device
+          unless you choose to send it: by sharing a PDF or a backup file, or by
+          turning on Google Drive backup, which stores an encrypted backup in
+          your own Google Drive. The App contains no analytics, advertising or
+          third-party crash-reporting software.
         </p>
 
         <h2>2. What the App stores, and where</h2>
         <p>
-          Everything below is stored in a local database on your device only,
-          using your device's own storage — never on a server we operate,
-          because we don't operate one:
+          Everything below is stored in an encrypted database on your device
+          only. The encryption key is kept in your phone's secure key storage
+          (Android Keystore or iOS Keychain).
         </p>
         <p>
           <strong>Business profile</strong> — your business name, contact
@@ -55,66 +58,98 @@
           and tax rates.<br />
           <strong>Documents</strong> — the invoices and quotations you create,
           including line items, totals, and payment records you log.<br />
-          <strong>Signatures and stamps</strong> — images you capture or upload
-          to place on documents.
+          <strong>Signatures and stamps</strong> — images you draw, capture or
+          upload to place on documents.<br />
+          <strong>Error log</strong> — a short record of unexpected app errors
+          (the error type, where it happened and technical details), kept so
+          the App can be fixed. It never includes the error message text, client
+          names, amounts or file contents, and it stays on your device unless
+          you choose to send it from <strong>Settings → Share error report</strong>.
         </p>
 
-        <h2>3. What we don't do</h2>
+        <h2>3. What leaves your device, and only when</h2>
         <p>
-          We don't collect, transmit, sell, or share your data, because the App
-          has no mechanism to do so. We don't track your usage of the App. We
-          don't show ads. We don't use third-party analytics, crash-reporting,
-          or advertising libraries. There is no cloud sync and no remote copy of
-          your data anywhere.
+          <strong>Sharing documents.</strong> When you tap "Share" or "Send" on
+          an invoice or quotation, the App hands the PDF to your device's share
+          sheet, for example to WhatsApp or email. That is your explicit,
+          one-time action; we have no visibility into what happens after you
+          hand the file to another app.
+        </p>
+        <p>
+          <strong>Backups.</strong> A backup is a single file encrypted with a
+          password you choose. We never see the password and cannot recover it.
+          You can save or share the file yourself. If you turn on
+          <strong>Google Drive backup</strong>, you sign in with Google and the
+          App uploads encrypted backups to a "BillBook Backups" folder in your
+          own Google Drive. The App asks only for permission to see files it
+          created itself (the <code>drive.file</code> scope), not the rest of
+          your Drive. Your Google account email is stored on your device to
+          show which account is connected. Google's handling of your Drive is
+          covered by
+          <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.
+          You can disconnect Drive in the App at any time.
+        </p>
+        <p>
+          <strong>Update check.</strong> The App downloads a small public file
+          from GitHub Pages (<code>junaidsaleem.github.io</code>) to learn
+          whether a newer version is available or required. The request
+          contains no personal or business data. Like any web request, it
+          reveals your device's IP address to GitHub, whose handling is covered
+          by GitHub's privacy statement; we do not receive or log it.
+        </p>
+        <p>
+          <strong>Error reports.</strong> If you choose
+          <strong>Share error report</strong> in Settings, the error log described above is shared through your
+          device's share sheet to whoever you send it to.
         </p>
 
-        <h2>4. Device permissions, and why</h2>
+        <h2>4. What we don't do</h2>
         <p>
-          The App may ask for the following permissions, each used only for the
-          specific feature named — never in the background, and never to collect
-          data for us:
-        </p>
-        <p>
-          <strong>Camera / Photo Library</strong> — to let you capture or choose
-          an image for your business logo or a scanned letterhead.<br />
-          <strong>Contacts</strong> — to let you import a client's name, phone
-          number, or address directly from your device's contacts instead of
-          typing it manually.
-        </p>
-        <p>
-          Any permission your device's operating system lists that isn't
-          described above (for example, one inherited from an underlying
-          software library the App depends on) is not actively used by any
-          InvoiceKit feature.
+          We don't collect, sell, rent or share your data, and we don't receive
+          it. We don't track how you use the App. We don't show ads. We don't
+          use third-party analytics, crash-reporting or advertising libraries.
         </p>
 
-        <h2>5. Sharing documents</h2>
+        <h2>5. Device permissions, and why</h2>
         <p>
-          When you tap "Share" on a generated invoice or quotation, the App
-          hands that PDF to your device's native share sheet — the same
-          system-level mechanism any app uses to share a file with WhatsApp,
-          email, or another app you choose. That transfer is your explicit,
-          one-time action; the App does not automatically send documents
-          anywhere, and we have no visibility into what happens after you hand
-          the file to another app.
+          Each permission is used only for the feature named, only when you use
+          that feature, and never to collect data for us:
+        </p>
+        <p>
+          <strong>Camera / Photos</strong> — to capture or choose an image for
+          your logo, letterhead, signature or stamp.<br />
+          <strong>Contacts</strong> — to import a client's name, phone number or
+          address instead of typing it. Only the contact you pick is saved.<br />
+          <strong>Fingerprint / Face ID</strong> — to unlock the App if you turn
+          on the app lock. The check is done by your phone; the App never
+          receives your fingerprint or face data.<br />
+          <strong>Internet</strong> — only for Google Drive backup and the
+          update check described above.
+        </p>
+        <p>
+          The App can also lock behind a PIN you set. The PIN is never stored
+          as-is: only a protected verifier is kept in your phone's secure key
+          storage. Screenshots are blocked on screens that show secrets such as
+          backup passwords.
         </p>
 
         <h2>6. Data retention and deletion</h2>
         <p>
-          Your data stays on your device for as long as you keep the App
-          installed. Uninstalling the App removes its local database along with
-          it. Because we hold no copy of your data, we cannot restore it for you
-          — the App's own Export/Restore feature (Settings → Export All Data /
-          Restore Backup) is the mechanism for keeping your own backup and
-          moving data between devices.
+          Your data stays on your device until you delete it. You can delete
+          individual records in the App, or remove everything with
+          <strong>Settings → Erase all data on this phone</strong>. Uninstalling the App also
+          removes its data from your device. Backup files you saved or shared,
+          and backups in your Google Drive, remain until you delete them; you
+          can delete the "BillBook Backups" folder from Google Drive at any time.
+          Because we hold no copy of your data, we cannot restore it for you —
+          keep a backup and remember its password.
         </p>
 
         <h2>7. Children's privacy</h2>
         <p>
-          InvoiceKit is a business tool intended for adult business owners and
-          is not directed at children. We do not knowingly collect data from
-          children, and given the App's local-only design, we have no mechanism
-          to collect data from anyone, of any age.
+          BillBook is a business tool intended for adult business owners and is
+          not directed at children. We do not knowingly collect data from
+          anyone, of any age.
         </p>
 
         <h2>8. Changes to this policy</h2>
@@ -127,13 +162,11 @@
         <h2>9. Contact</h2>
         <p>
           Questions about this policy or your data can be sent to
-          <a href="mailto:junaidsaleem.ctn@gmail.com"
-            >junaidsaleem.ctn@gmail.com</a
-          >.
+          <a href="mailto:support@billbook.store">support@billbook.store</a>.
         </p>
       </div>
 
-      <footer>InvoiceKit v1.0.0</footer>
+      <footer>BillBook v1.0.0</footer>
     </div>
   </body>
 </html>
