@@ -19,7 +19,7 @@
       <a class="back-link" href="index.html">← Back</a>
       <h1>Privacy Policy</h1>
       <p class="meta">
-        Last updated: October 15, 2026 · Applies to BillBook v1.0.0
+        Last updated: October 20, 2026 · Applies to BillBook v1.0.1 and later
       </p>
 
       <div class="doc">
@@ -38,8 +38,11 @@
           receive your business data. Nothing you enter leaves your device
           unless you choose to send it: by sharing a PDF or a backup file, or by
           turning on Google Drive backup, which stores an encrypted backup in
-          your own Google Drive. The App contains no analytics, advertising or
-          third-party crash-reporting software.
+          your own Google Drive. The App contains no analytics or advertising.
+          It does send anonymous crash reports (what went wrong, never your
+          data or who you are) so problems can be fixed; you can turn them off
+          in Settings. Reminders are made on your phone and nothing is sent to
+          make them.
         </p>
 
         <h2>2. What the App stores, and where</h2>
@@ -102,12 +105,47 @@
           <strong>Share error report</strong> in Settings, the error log described above is shared through your
           device's share sheet to whoever you send it to.
         </p>
+        <p>
+          <strong>Crash reports.</strong> When the App crashes or hits an
+          unexpected error, it sends an anonymous report to
+          <strong>BugSnag</strong>, a crash-reporting service run by SmartBear
+          Software, so we can find and fix the problem. It also sends how long
+          the App took to start. Crash reports are on by default; you can turn
+          them off at any time in <strong>Settings → Crash reports</strong>, and
+          from then on nothing more is sent.
+        </p>
+        <p>
+          A crash report contains only: the type of error, the places in the
+          App's own code where it happened (file names and line numbers), the
+          App version, and your phone's model and operating-system version.
+          Before a report leaves your phone, the App removes everything else.
+          A crash report <strong>never</strong> contains your name, your
+          business details, client names, phone numbers, addresses, amounts,
+          invoice or quotation contents, the text of the error, your contacts,
+          files, photos or location, and it carries no user or device
+          identifier, so reports cannot be linked to you or to each other. Like
+          any internet request, sending a report reveals your device's IP
+          address to BugSnag, which may record it under its own policy; we
+          never use it to identify you or link reports together. BugSnag keeps reports
+          for a limited time and handles them under
+          <a href="https://smartbear.com/privacy/">SmartBear's Privacy Policy</a>.
+        </p>
+        <p>
+          <strong>Reminders.</strong> If you allow notifications, the App
+          schedules reminders (money due, quotations, backups, short business
+          tips) on your phone itself. Nothing is sent anywhere to create them.
+          By default a reminder on your lock screen says only, for example,
+          "2 payments are late"; client names and amounts appear only if you
+          turn that on in <strong>Settings → Reminders</strong>.
+        </p>
 
         <h2>4. What we don't do</h2>
         <p>
           We don't collect, sell, rent or share your data, and we don't receive
           it. We don't track how you use the App. We don't show ads. We don't
-          use third-party analytics, crash-reporting or advertising libraries.
+          use third-party analytics or advertising libraries. The only
+          third-party service the App reports to is BugSnag, for the anonymous
+          crash reports described above.
         </p>
 
         <h2>5. Device permissions, and why</h2>
@@ -123,8 +161,10 @@
           <strong>Fingerprint / Face ID</strong> — to unlock the App if you turn
           on the app lock. The check is done by your phone; the App never
           receives your fingerprint or face data.<br />
-          <strong>Internet</strong> — only for Google Drive backup and the
-          update check described above.
+          <strong>Notifications</strong> — to show the reminders described
+          above. The App asks first, and works fully without it.<br />
+          <strong>Internet</strong> — only for Google Drive backup, the update
+          check and anonymous crash reports, all described above.
         </p>
         <p>
           The App can also lock behind a PIN you set. The PIN is never stored
